@@ -8,3 +8,19 @@
     justify-content: center;
     align-items:center;
 }
+#target1{
+    background-color: #ff007f;
+    border-radius: 4px;
+}
+#greeText{
+ color: #32cd32;
+ font-weight: bold; 
+}
+#whiteText{
+    opacity: 0;
+}
+.page-item{
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 4px;
+}

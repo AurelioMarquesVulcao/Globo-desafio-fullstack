@@ -37,7 +37,7 @@ class Body extends Component {
               <th scope="col">DATA DE ALTERAÇÃO</th>
               <th scope="col">REGRAS</th>
               <th scope="col">STATUS</th>
-              <th scope="col"></th>
+              <th scope="col" id="whiteText">............................</th>
               <th scope="col">AÇÕES</th>
             </tr>
           </thead>
@@ -48,14 +48,14 @@ class Body extends Component {
                   <th scope="row" className="form-check">
                     <input className="form-check-input " type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></input>
                   </th>
-                  <td className="userName">{item.user}</td>
+                  <td className="userName">{item.user.toUpperCase()}</td>
                   <td>{item.email}</td>
                   <td>{item.date_in}</td>
                   <td>{item.change_date}</td>
                   <td>{item.rules}</td>
-                  <td>{item.status}</td>
+                  <td id="greeText">{item.status.toUpperCase()}</td>
                   <td></td>
-                  <td>...</td>
+                  <td><a href="/"> <img src={require('../../assets/img/3dots.svg')} alt="undefine" id="iconsvg"/> </a></td>
                 </tr>
               );
             })}
@@ -65,15 +65,15 @@ class Body extends Component {
         <nav aria-label="..." className="navButton">
           <ul className="pagination">
             <li className="page-item disabled">
-              <a className="page-link" href="/" >Anterior</a>
+              <a className="page-link text-muted" href="/" >Primeiro</a>
             </li>
-            <li className="page-item"><a className="page-link" href="/">1</a></li>
-            <li className="page-item active">
-              <a className="page-link" href="/">2 <span className="sr-only">(atual)</span></a>
-            </li>
-            <li className="page-item"><a className="page-link" href="/">3</a></li>
+            <li className="page-item "><a className="page-link text-muted" href="/">Anterior</a></li>
             <li className="page-item">
-              <a className="page-link" href="/">Próximo</a>
+              <a className="page-link text-white" href="/" id="target1">2 </a>
+            </li>
+            <li className="page-item"><a className="page-link text-muted" href="/">Próximo</a></li>
+            <li className="page-item">
+              <a className="page-link text-muted" href="/">Ultimo</a>
             </li>
           </ul>
         </nav>
