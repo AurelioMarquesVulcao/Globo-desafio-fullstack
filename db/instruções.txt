@@ -1,0 +1,31 @@
+npm install -g json-server 
+
+Crie um arquivo com o nome db.json
+
+{
+    "users": [{
+        "id": 1,
+        "name": "Andrew",
+        "location": "Brazil"
+    }, {
+        "id": 2,
+        "name": "Julio",
+        "location": "Canadá"
+    }]
+}
+
+
+rode na pasta do aqruivo db
+json-server db.json
+json-server DB.json
+
+
+
+Teste o método GET com a URL http://localhost:3000/users/1 e http://localhost:3000/users para todos os usuários.
+
+
+5.Filtro de pesquisa
+Podemos utilizar buscas, por exemplo com a URL http://localhost:3000/users?name=Lilian
+
+
+https://github.com/typicode/json-server

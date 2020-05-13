@@ -1,0 +1,218 @@
+{
+  "tvshows": [
+    {
+      "id": 3,
+      "name": "Bom Dia Brasil",
+      "location": "regional-rj",
+      "url": "https://g1.globo.com/bom-dia-brasil/",
+      "hour_start": "08:30:0",
+      "hour_end": "09:49:59"
+    },
+    {
+      "id": 1,
+      "name": "Hora Um",
+      "location": "regional-rj",
+      "url": "https://g1.globo.com/hora1/",
+      "hour_start": "04:0:0",
+      "hour_end": "05:59:59"
+    },
+    {
+      "id": 2,
+      "name": "Hora Um",
+      "location": "Bom Dia Rio",
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/",
+      "hour_start": "06:0:0",
+      "hour_end": "08:29:59"
+    },
+    {
+      "id": 4,
+      "name": "Combate ao Coronavírus",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "09:50:0",
+      "hour_end": "10:40:59"
+    },
+    {
+      "id": 5,
+      "name": "Encontro com Fátima Bernardes",
+      "location": "regional-rj",
+      "url": "http://gshow.globo.com/programas/encontro-com-fatima-bernardes/",
+      "hour_start": "10:41:0",
+      "hour_end": "11:59:59"
+    },
+    {
+      "id": 6,
+      "name": "RJ1",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "12:00:0",
+      "hour_end": "13:24:59"
+    },
+    {
+      "id": 7,
+      "name": "Jornal Hoje",
+      "location": "regional-rj",
+      "url": "https://g1.globo.com/jornal-hoje/",
+      "hour_start": "13:25:0",
+      "hour_end": "14:57:59"
+    },
+    {
+      "id": 8,
+      "name": "Sessão da Tarde",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "14:58:0",
+      "hour_end": "16:34:59"
+    },
+    {
+      "id": 9,
+      "name": "Vale a Pena Ver de Novo",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "16:35:0",
+      "hour_end": "17:57:59"
+    },
+    {
+      "id": 10,
+      "name": "Malhação",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "17:58:0",
+      "hour_end": "18:26:59"
+    },
+    {
+      "id": 11,
+      "name": "Novo Mundo",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "18:27:0",
+      "hour_end": "19:6:59"
+    },
+    {
+      "id": 12,
+      "name": "RJ2",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "19:7:0",
+      "hour_end": "19:36:59"
+    },
+    {
+      "id": 13,
+      "name": "Totalmente Demais",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "19:37:0",
+      "hour_end": "20:29:59"
+    },
+    {
+      "id": 14,
+      "name": "Jornal Nacional",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "20:30:0",
+      "hour_end": "21:34:59"
+    },
+    {
+      "id": 15,
+      "name": "Fina Estampa",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "21:35:0",
+      "hour_end": "22:39:59"
+    },
+    {
+      "id": 16,
+      "name": "Tela Quente",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "22:40:0",
+      "hour_end": "01:8:59"
+    },
+    {
+      "id": 17,
+      "name": "Jornal da Globo",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "01:09:0",
+      "hour_end": "02:4:59"
+    },
+    {
+      "id": 18,
+      "name": "Quantico",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "02:05:0",
+      "hour_end": "02:42:59"
+    },
+    {
+      "id": 19,
+      "name": "Corujão",
+      "location": "regional-rj",
+      "url": "",
+      "hour_start": "02:43:0",
+      "hour_end": "03:59:59"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "user": "anapina",
+      "name": "antonio pina",
+      "email": "antonio.pina@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "01",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "user": "cchang",
+      "name": "ciro chang",
+      "email": "ciro.chang@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "01",
+      "status": "ativo"
+    },
+    {
+      "id": 3,
+      "user": "tmachado",
+      "name": "thiago marcal",
+      "email": "thiago.marcal@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "01",
+      "status": "ativo"
+    },
+    {
+      "id": 4,
+      "user": "ecgiann",
+      "name": "gianoto",
+      "email": "ecgianotto@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "01",
+      "status": "ativo"
+    },
+    {
+      "id": 5,
+      "user": "yfernand",
+      "name": "yuri vasquez",
+      "email": "yuri.vazquez@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "02",
+      "status": "ativo"
+    },
+    {
+      "id": 6,
+      "user": "placerda",
+      "name": "pedro soares",
+      "email": "pedro.soares@tvglobo.com.br",
+      "date_in": "28/05/2019",
+      "change_date": "30/05/2019",
+      "rules": "02",
+      "status": "ativo"
+    }
+  ]
+}
