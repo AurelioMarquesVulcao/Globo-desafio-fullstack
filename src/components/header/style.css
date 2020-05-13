@@ -1,0 +1,60 @@
+.button1 {
+    border-radius: 7px;
+    border: 7px;
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(45grad, red, orange);
+    float: left;
+    margin-right: 25px;
+}
+.button2 {
+    border-radius: 7px;
+    border: 7px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    float: left;
+}
+.button3 {
+    border-radius: 7px;
+    border: 7px;
+    width: 55px;
+    height: 35px;
+    background-image: linear-gradient(45grad, red, orange);
+    float: left;
+    margin-right: 50px;
+
+}
+.img {
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+    margin: 9px;
+}
+.alignLeft {
+    float: left;
+}
+header {
+    height: 50px;
+}
+.butonsLeft {
+    margin: 20px;
+}
+.right {
+    float: right;
+}
+.form-inline{
+    margin-left: 20px;
+}
+.buttonSearch {
+    border-radius: 7px;
+    border: 7px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-left: -35px;
+}

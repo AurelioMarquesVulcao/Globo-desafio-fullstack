@@ -62,7 +62,7 @@ class Body extends Component {
           </tbody>
         </table>
         {/* navigation */}
-        <nav aria-label="...">
+        <nav aria-label="..." className="navButton">
           <ul className="pagination">
             <li className="page-item disabled">
               <a className="page-link" href="/" >Anterior</a>

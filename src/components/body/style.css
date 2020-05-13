@@ -3,3 +3,8 @@
     margin-right: -25px;
     
 }
+.navButton{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
