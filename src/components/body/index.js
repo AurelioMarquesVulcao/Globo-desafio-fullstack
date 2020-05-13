@@ -26,7 +26,7 @@ class Body extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="">
         <table className="table table-striped">
           <thead className="bg-white">
             <tr>
@@ -45,8 +45,10 @@ class Body extends Component {
             {this.state.users.map((item) => {
               return (
                 <tr key={item.id}>
-                  <th scope="row">1</th>
-                  <td>{item.user}</td>
+                  <th scope="row" className="form-check">
+                    <input className="form-check-input " type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></input>
+                  </th>
+                  <td className="userName">{item.user}</td>
                   <td>{item.email}</td>
                   <td>{item.date_in}</td>
                   <td>{item.change_date}</td>
@@ -59,6 +61,23 @@ class Body extends Component {
             })}
           </tbody>
         </table>
+        {/* navigation */}
+        <nav aria-label="...">
+          <ul className="pagination">
+            <li className="page-item disabled">
+              <a className="page-link" href="/" >Anterior</a>
+            </li>
+            <li className="page-item"><a className="page-link" href="/">1</a></li>
+            <li className="page-item active">
+              <a className="page-link" href="/">2 <span className="sr-only">(atual)</span></a>
+            </li>
+            <li className="page-item"><a className="page-link" href="/">3</a></li>
+            <li className="page-item">
+              <a className="page-link" href="/">Próximo</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
     );
   }
