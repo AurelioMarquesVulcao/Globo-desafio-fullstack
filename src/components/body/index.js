@@ -69,7 +69,7 @@ class Body extends Component {
             </li>
             <li className="page-item "><a className="page-link text-muted" href="/">Anterior</a></li>
             <li className="page-item">
-              <a className="page-link text-white" href="/" id="target1">2 </a>
+              <a className="page-link text-white" href="/" id="target1">1 </a>
             </li>
             <li className="page-item"><a className="page-link text-muted" href="/">Próximo</a></li>
             <li className="page-item">

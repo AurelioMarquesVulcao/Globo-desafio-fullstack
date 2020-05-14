@@ -20,11 +20,21 @@ module.exports = dateFull
 // options of hour:
 // now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + ":" + now.getMilliseconds()
 function hourFull() {
-    hour = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds()
+    seconds = now.getSeconds()
+    minutes = now.getMinutes()
+    Hour = now.getHours()
+    if (seconds <= 9) {
+        seconds = "0" + seconds
+    }
+    if (minutes <= 9) {
+        minutes = "0" + minutes
+    }
+
+    hour = Hour + ":" + minutes + ":" + seconds
     return hour
 };
 
-//console.log(hourFull());
+console.log(hourFull());
 
 // setInterval(function () {
 //     clock.innerHTML = ((new Date).toLocaleString().substr(11, 8));  

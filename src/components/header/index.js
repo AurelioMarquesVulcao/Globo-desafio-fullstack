@@ -35,7 +35,7 @@ class Header extends Component {
             </a>
             {/* Search */}
             <form className="form-inline">
-              <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+              <input type="text" className="form-control" placeholder="Pesquisar..." aria-label="Username" aria-describedby="basic-addon1" />
               <a className="buttonSearch" href="/">
                 <svg className="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" />

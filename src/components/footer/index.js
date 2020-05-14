@@ -23,7 +23,21 @@ class Footer extends Component {
     // Function to display the time after opening the page
     this.time = setInterval(() => {
       const now = new Date()
-      state.hour = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds()
+      var seconds = now.getSeconds()
+      var minutes = now.getMinutes()
+      var Hour = now.getHours()
+      if (seconds <= 9) {
+        seconds = "0" + seconds
+      }
+      if (minutes <= 9) {
+        minutes = "0" + minutes
+      }
+      if (Hour <= 9) {
+        Hour = "0" + Hour
+      }
+
+      state.hour = "// " + Hour + ":" + minutes + ":" + seconds
+
       this.setState(state);
       // to check the time on the console
       // console.log(state.hour);
@@ -54,7 +68,21 @@ class Footer extends Component {
         .then((res) => res.json())
         .then((json) => {
           const now = new Date()
-          var hourNow = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds()
+
+          var seconds = now.getSeconds()
+          var minutes = now.getMinutes()
+          var Hour = now.getHours()
+          if (seconds <= 9) {
+            seconds = "0" + seconds
+          }
+          if (minutes <= 9) {
+            minutes = "0" + minutes
+          }
+          if (Hour <= 9) {
+            Hour = "0" + Hour
+          }
+          var hourNow = Hour + ":" + minutes + ":" + seconds
+          
           // Filtering for current schedule
           var tvNow = []
           let i = 0
@@ -65,7 +93,7 @@ class Footer extends Component {
               if (json[i]["hour_start"].split(":") < hourNow.split(":")) {
                 tvNow = json[i]["name"]
                 state.show = tvNow + " " + json[i]["hour_start"]
-                state.showUpdate = now.getHours() + ":" + now.getMinutes()
+                state.showUpdate = Hour + ":" + minutes
                 console.log(tvNow);
               }
             }
@@ -74,7 +102,7 @@ class Footer extends Component {
         })
     }
     tvdata()
-    this.date = setInterval(() => { tvdata() }, 600000);
+    this.date = setInterval(() => { tvdata() }, 300000);
 
 
 
