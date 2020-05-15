@@ -2,6 +2,8 @@
 
 ## Back
 
+Use Python 3.7 or higher to run the code
+
 <hr>
 
 ### Question: 1
