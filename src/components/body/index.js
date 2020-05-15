@@ -87,11 +87,11 @@ class Body extends Component {
 
   render() {
     return (
-      <div className="">
+      <div>
         <table className="table table-striped">
           <thead className="bg-white">
             <tr>
-              <th scope="col"></th>
+              <th scope="col" id="whiteText">..........</th>
               <th scope="col" className="textcenter">USUÁRIO</th>
               <th scope="col" className="textcenter">EMAIL</th>
               <th scope="col"className="textcenter">DATA DE INCLUSÃO</th>

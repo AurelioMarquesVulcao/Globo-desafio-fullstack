@@ -73,6 +73,7 @@ color: #ff007f;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: Open Sans;
 }
 .textcenter{
     font-size: 12px;
@@ -80,4 +81,6 @@ color: #ff007f;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    
+    
 }

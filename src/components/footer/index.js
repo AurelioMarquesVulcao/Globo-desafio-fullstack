@@ -11,7 +11,7 @@ class Footer extends Component {
     this.state = {
       hour: "",
       dateNow: "",
-      onAir: "On Air",
+      onAir: "NO AR",
       show: [],
       showUpdate: []
 
@@ -118,13 +118,15 @@ class Footer extends Component {
         <div className="footer text-white bg-dark">
 
           <div className="nowTv row">
-            <div className="col-md-auto"> {this.state.onAir}{this.state.show}</div>
+            <img className="target" alt="description of IMAGEM" src={require('../../assets/img/target.svg')} />
+            <div className="col-md-auto targetOrange"> {this.state.onAir}</div>
+            <div>{this.state.show}</div>
             <div className="col-md-auto"> Ultima atulização em: {this.state.showUpdate}</div>
           </div>
 
-          <div className="nowTime">
-            {this.state.dateNow}  <div className="hour align-middle">{this.state.hour}</div>
-          </div>
+
+          <div className="hour">{this.state.hour}</div>
+          <div className="nowTime">{this.state.dateNow}</div>
         </div>
 
       </div>
