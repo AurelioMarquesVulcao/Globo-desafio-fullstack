@@ -32,6 +32,7 @@
     height: 35px;
     background-color: white;
     float: left;
+    margin-bottom: -45px;
 }
 .img {
     width: 20px;
@@ -87,6 +88,7 @@ header {
     height: 15px;
     margin: 10px;
 }
-#pinkText{
+
+.pinkText{
     color:#ff007f
 }

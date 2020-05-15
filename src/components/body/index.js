@@ -76,11 +76,11 @@ class Body extends Component {
         state.users = json;
         this.setState(state);
         console.log(json);
-        
+
       })
-      this.state.dateInFilter= "todas as datas de inclusão"
-      this.state.dateChangeFilter= "todas as datas de alteração"
-      this.setState(state);
+    state.dateInFilter = "todas as datas de inclusão"
+    state.dateChangeFilter = "todas as datas de alteração"
+    this.setState(state);
 
   }
 
@@ -139,55 +139,8 @@ class Body extends Component {
           </ul>
         </nav>
         {/* <!---- End of list---- > */}
+   
 
-
-
-        <div>
-          <div className="button4" >
-            <img className="svg" alt="description of IMAGEM" src={require('../../assets/img/calendar.svg')} />
-          </div>
-          <form >
-
-            <input onClick={() => { this.setState({ dateInFilter: "" }) }}
-              onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
-              type="text" id="pinkText" value={this.state.dateInFilter.toLocaleUpperCase()}
-              className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" />
-
-            <input onClick={() => { this.setState({ dateChangeFilter: "" }) }}
-              onChange={(e) => { this.setState({ dateChangeFilter: e.target.value }) }}
-              type="text" id="pinkText" value={this.state.dateChangeFilter.toLocaleUpperCase()}
-              className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" />
-          </form>
-
-        </div>
-
-
-
-        <div>
-          <div className="dropdown">
-            <button className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div className="button4" >
-                <img className="img" alt="description of IMAGEM" src={require('../../assets/img/onOff.svg')} />
-              </div>
-              <b id="pinkText" > ATIVOS E INATIVOS</b>
-
-            </button>
-            {/* onChange={this.insertStatusFilter} */}
-            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-              <div className="dropdown-item" onClick={this.filterOne}>Ativos</div>
-              <div className="dropdown-item" onClick={this.filterTwo}>Inativos</div>
-
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div type="button" className="btn btn-primary" onClick={this.applyFilter}>APLICAR</div>
-        </div>
-
-
-        <h2>{this.state.statusFilter}</h2>
-        <h2>{this.state.dateInFilter}</h2>
 
 
 
@@ -216,11 +169,35 @@ class Body extends Component {
                     Utilisze os filtros abaixo para refinar os resultados
                     da tabela, clique no botão APLICAR para salvar as alterações
                   </div>
+
+
+                  <div className="button4 " >
+                    <img className="svg " alt="description of IMAGEM" src={require('../../assets/img/calendar.svg')} />
+                  </div>
+
+                  <form className="filterDate">
+                    <input onClick={() => { this.setState({ dateInFilter: "" }) }}
+                      onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
+                      type="text" value={this.state.dateInFilter.toLocaleUpperCase()}
+                      className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block pinkText" />
+                  </form>
+
+
+
+                  <form className="filterDate">
+                    <input onClick={() => { this.setState({ dateChangeFilter: "" }) }}
+                      onChange={(e) => { this.setState({ dateChangeFilter: e.target.value }) }}
+                      type="text" value={this.state.dateChangeFilter.toLocaleUpperCase()}
+                      className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block pinkText" />
+                  </form>
+
+
+
                   <div>
                     <div className="dropdown">
                       <button className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div className="button1" href="/">
-                          <img className="img" alt="description of IMAGEM" src={require('../../assets/img/icons8-person-30.png')} />
+                          <img className="img" alt="description of IMAGEM" src={require('../../assets/img/onOff.svg')} />
                         </div>
                         <b id="teste01" >ATIVOS E INATIVOS</b>
 
@@ -233,12 +210,14 @@ class Body extends Component {
                       </div>
                     </div>
                   </div>
+
+
                   <div>
                     <br></br><br></br><br></br><br></br><br></br><br></br>
                     <h2>{this.state.statusFilter}</h2>
                   </div>
                   <div>
-                    <div type="button" className="btn btn-primary" onClick={this.applyFilter}>APLICAR</div>
+                    <div type="button" className="btn btn-primary btn-block" onClick={this.applyFilter}>APLICAR</div>
                   </div>
 
                 </div>
@@ -254,7 +233,7 @@ class Body extends Component {
 
 
 
-      </div>
+      </div >
     );
   }
 }

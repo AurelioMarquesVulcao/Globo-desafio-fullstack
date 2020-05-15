@@ -9,3 +9,27 @@ Erros:
 
 Erro-01 - foi inserido um numero alvo cuja a soma de dois 
 	  elementos  diferentes do Array x não pode ser atendida.
+
+
+	  Questão: 1
+deve ser utilizado um (array, alvo) para chamar a função alvo.
+inseri um erro caso fosse impossivel atingir o alvo com a soma e 2 elementos do array.
+a função permite que seja usado 2 números iguais, porém cada elemento do array será usado apenas uma vez.
+não está sendo utilizado o mesmo elemento  do array 2 vezes.
+caso não queira repetir 2 numeros reais a função alvo 2 foi criada.
+
+Erros:
+
+Erro-01 - foi inserido um numero alvo cuja a soma de dois 
+	  elementos  diferentes do Array x não pode ser atendida.
+
+
+Questão: 2
+Ao chamar a função  balanceamento com uma string, no retorno será respondido se está balanceado 'sim' ou 'não'.
+
+
+Questão: 3
+Ao chamar a função  balanceamento com uma string, no retorno será respondido, lucro máximo, o dia para comprar, o dia para vender e os valor de compra e venda.
+
+Questão: 4
+Ao chamar a função  volume de água você recebera o volume de agua do grafico

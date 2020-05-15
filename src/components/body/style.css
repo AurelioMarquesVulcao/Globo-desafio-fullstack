@@ -39,3 +39,16 @@
     height: 100vh;
     margin-bottom: -65px;
 }
+.filterDate{
+    margin: 7px;
+}
+.send{
+    width: 60
+    ;
+}
+.rightBody {
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: -0px
+}

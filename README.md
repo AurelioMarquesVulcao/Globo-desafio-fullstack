@@ -21,3 +21,7 @@ When calling the balancing function with a string, the return will be answered i
 
 ### Question: 3
 When calling the balancing function with a string, the return will be answered, maximum profit, the day to buy, the day to sell and the purchase and sale value.
+
+
+### Question: 4
+When calling the water volume function you will receive the water volume of the graph
