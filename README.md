@@ -1,5 +1,6 @@
 # GLobo Full Stack
 
+Para rodar os arquivos em python use python 3.7 ou superior.
 
 ### Question: 1
 one (array, target) must be used to call the target function.
@@ -16,3 +17,7 @@ elements other than Array x cannot be met.
 
 ### Question: 2
 When calling the balancing function with a string, the return will be answered if it is balanced 'yes' or 'no'.
+
+
+### Question: 3
+When calling the balancing function with a string, the return will be answered, maximum profit, the day to buy, the day to sell and the purchase and sale value.
