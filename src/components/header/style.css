@@ -30,22 +30,35 @@
     border: 7px;
     width: 35px;
     height: 35px;
-    background-color: white;
+    background-color: #dcdcdc;
     float: left;
-    margin-bottom: -45px;
+    
+    
 }
 .img {
     width: 20px;
     height: 20px;
     margin: 7px;
+    margin-top: 8px;
     justify-content: center;
     align-items: center;
 }
 svg {
     margin: 9px;
 }
+.svg{
+    width: 20px;
+    height: 20px;
+    margin: 7px;
+    justify-content: center;
+    align-items: center;
+
+}
 .alignLeft {
     float: left;
+}
+.alignRight {
+    float: right;
 }
 header {
     height: 50px;

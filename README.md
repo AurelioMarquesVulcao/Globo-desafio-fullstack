@@ -1,6 +1,6 @@
 # GLobo Full Stack
 
-Para rodar os arquivos em python use python 3.7 ou superior.
+To run files in python use python 3.7 or higher.
 
 ### Question: 1
 one (array, target) must be used to call the target function.

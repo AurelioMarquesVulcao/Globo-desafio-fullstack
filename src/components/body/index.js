@@ -92,14 +92,14 @@ class Body extends Component {
           <thead className="bg-white">
             <tr>
               <th scope="col"></th>
-              <th scope="col">USUÁRIO</th>
-              <th scope="col">EMAIL</th>
-              <th scope="col">DATA DE INCLUSÃO</th>
-              <th scope="col">DATA DE ALTERAÇÃO</th>
-              <th scope="col">REGRAS</th>
-              <th scope="col">STATUS</th>
+              <th scope="col" className="textcenter">USUÁRIO</th>
+              <th scope="col" className="textcenter">EMAIL</th>
+              <th scope="col"className="textcenter">DATA DE INCLUSÃO</th>
+              <th scope="col" className="textcenter">DATA DE ALTERAÇÃO</th>
+              <th scope="col" className="textcenter">REGRAS</th>
+              <th scope="col" className="textcenter">STATUS</th>
               <th scope="col" id="whiteText">............................</th>
-              <th scope="col">AÇÕES</th>
+              <th scope="col" className="textcenter">AÇÕES</th>
             </tr>
           </thead>
           <tbody>
@@ -109,12 +109,12 @@ class Body extends Component {
                   <th scope="row" className="form-check">
                     <input className="form-check-input " type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></input>
                   </th>
-                  <td className="userName">{item.user.toUpperCase()}</td>
-                  <td>{item.email}</td>
-                  <td>{item.date_in}</td>
-                  <td>{item.change_date}</td>
-                  <td>{item.rules}</td>
-                  <td id={item.status[1]}>{item.status[0].toUpperCase()}</td>
+                  <td className="userName textCollum">{item.user.toUpperCase()}</td>
+                  <td className="textCollum">{item.email}</td>
+                  <td className="textCollum">{item.date_in}</td>
+                  <td className="textCollum">{item.change_date}</td>
+                  <td className="textCollum">{item.rules}</td>
+                  <td className="textCollum" id={item.status[1]}>{item.status[0].toUpperCase()}</td>
                   <td></td>
                   <td><a href="/"> <img src={require('../../assets/img/3dots.svg')} alt="undefine" id="iconsvg" /> </a></td>
                 </tr>
@@ -141,12 +141,6 @@ class Body extends Component {
         {/* <!---- End of list---- > */}
    
 
-
-
-
-
-
-
         {/* <!-- Modal --> */}
         <div id="rightBody">
           <div className="modal fade" id="filterUser" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -166,58 +160,54 @@ class Body extends Component {
                 </div>
                 <div className="modal-body">
                   <div>
-                    Utilisze os filtros abaixo para refinar os resultados
+                    Utilize os filtros abaixo para refinar os resultados
                     da tabela, clique no botão APLICAR para salvar as alterações
                   </div>
 
 
-                  <div className="button4 " >
-                    <img className="svg " alt="description of IMAGEM" src={require('../../assets/img/calendar.svg')} />
-                  </div>
-
-                  <form className="filterDate">
+                  
+                 
+              
+                  <form className="filterDate textFilter">
                     <input onClick={() => { this.setState({ dateInFilter: "" }) }}
                       onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
                       type="text" value={this.state.dateInFilter.toLocaleUpperCase()}
-                      className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block pinkText" />
-                  </form>
+                      className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkText textFilter" />
+                  </form><hr></hr>
+                  
+                  
 
 
 
-                  <form className="filterDate">
+                  <form className="filterDate textFilter">
                     <input onClick={() => { this.setState({ dateChangeFilter: "" }) }}
                       onChange={(e) => { this.setState({ dateChangeFilter: e.target.value }) }}
                       type="text" value={this.state.dateChangeFilter.toLocaleUpperCase()}
-                      className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block pinkText" />
-                  </form>
+                      className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkTex textFilter" />
+                  </form><hr></hr>
 
 
 
                   <div>
                     <div className="dropdown">
-                      <button className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div className="button1" href="/">
-                          <img className="img" alt="description of IMAGEM" src={require('../../assets/img/onOff.svg')} />
+                      <button className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div className="button4" href="/">
+                          <img className="svg" alt="description of IMAGEM" src={require('../../assets/img/onOff.svg')} />
                         </div>
-                        <b id="teste01" >ATIVOS E INATIVOS</b>
+                        <b id="teste01" className="textFilter" >ATIVOS E INATIVOS</b>
 
-                      </button>
+                      </button><hr></hr>
                       {/* onChange={this.insertStatusFilter} */}
-                      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" >
-                        <div className="dropdown-item" onClick={this.filterOne}>Ativos</div>
-                        <div className="dropdown-item" onClick={this.filterTwo}>Inativos</div>
+                      <div className="dropdown-menu bg-lgray " aria-labelledby="dropdownMenuButton" >
+                        <div className="dropdown-item textFilter" onClick={this.filterOne}>Ativos</div>
+                        <div className="dropdown-item textFilter" onClick={this.filterTwo}>Inativos</div>
 
                       </div>
                     </div>
                   </div>
 
-
                   <div>
-                    <br></br><br></br><br></br><br></br><br></br><br></br>
-                    <h2>{this.state.statusFilter}</h2>
-                  </div>
-                  <div>
-                    <div type="button" className="btn btn-primary btn-block" onClick={this.applyFilter}>APLICAR</div>
+                    <div type="button" className="btn bg-lgray btn-block box-shadow" onClick={this.applyFilter}>APLICAR</div>
                   </div>
 
                 </div>

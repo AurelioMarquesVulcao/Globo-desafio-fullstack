@@ -33,3 +33,5 @@ Ao chamar a função  balanceamento com uma string, no retorno será respondido,
 
 Questão: 4
 Ao chamar a função  volume de água você recebera o volume de agua do grafico
+
+inserir ajustes

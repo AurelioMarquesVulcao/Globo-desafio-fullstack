@@ -52,3 +52,32 @@
     right: 0;
     margin-top: -0px
 }
+.modal-body{
+background-color: #dcdcdc;
+
+}
+.bg-lgray{
+    background-color: #dcdcdc;
+}
+.box-shadow{
+    border-width:2px;
+    border-color:#ff007f;
+}
+.textFilter{
+font-size: 14px;
+color: #ff007f;
+}
+.textCollum{
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textcenter{
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
