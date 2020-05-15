@@ -16,6 +16,10 @@
  color: #32cd32;
  font-weight: bold; 
 }
+#redText{
+    color: #d20117;
+    font-weight: bold; 
+   }
 #whiteText{
     opacity: 0;
 }
@@ -23,4 +27,15 @@
     margin-left: 3px;
     margin-right: 3px;
     border-radius: 4px;
+}
+#rightBody {
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: -0px
+}
+.modal-body{
+    width: 400px;
+    height: 100vh;
+    margin-bottom: -65px;
 }

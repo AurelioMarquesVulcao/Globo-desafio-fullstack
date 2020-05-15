@@ -15,7 +15,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <div>
 
 
         <div className="butonsLeft">
@@ -68,24 +68,21 @@ class Header extends Component {
             </svg>
           </div>
 
-        <div className="inputUser" id="right">
-        <a className="inputUser text-white" href="/">
+          <div className="inputUser" id="right">
+            <a className="inputUser text-white" href="/">
               <img className="img" alt="description of IMAGEM" src={require('../../assets/img/icons8-person-30.png')} />INCLUIR USUÁRIO
             </a>
+          </div>
+
+          <div className=" filter button2 " type="button" data-toggle="modal" data-target="#filterUser" id="right">
+            <img src={require('../../assets/img/icon-set2.svg')} alt="undefine" id="iconsvg" />
+          </div>
+
         </div>
 
-        <div className="button2"  id="right">
-        <img src={require('../../assets/img/icon-set2.svg')} alt="undefine" id="iconsvg"/>
-        </div>
-
-        </div>
 
 
-
-
-
-
-      </header>
+      </div>
     )
   }
 }

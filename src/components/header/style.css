@@ -25,6 +25,14 @@
     margin-right: 50px;
 
 }
+.button4 {
+    border-radius: 7px;
+    border: 7px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    float: left;
+}
 .img {
     width: 20px;
     height: 20px;
@@ -78,4 +86,7 @@ header {
     width: 15px;
     height: 15px;
     margin: 10px;
+}
+#pinkText{
+    color:#ff007f
 }
