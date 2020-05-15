@@ -18,8 +18,7 @@ class Body extends Component {
     this.filterOne = this.filterOne.bind(this);
     this.filterTwo = this.filterTwo.bind(this);
     this.applyFilter = this.applyFilter.bind(this);
-    this.dateIn = this.dateIn.bind(this);
-    this.dateChange = this.dateChange.bind(this);
+
   }
   componentDidMount() {
     let state = this.state;
@@ -37,7 +36,7 @@ class Body extends Component {
   }
 
   colorStatus(json) {
-    var i = 0
+    let i = 0
     for (i in json) {
       if (json[i].status === "ativo") {
         json[i].status = [json[i].status, "greeText"]
@@ -48,33 +47,40 @@ class Body extends Component {
   }
 
   filterOne() {
-    let filter = "?status=ativo"
+    let filter = "status=ativo&"
     this.setState({ statusFilter: filter })
   }
 
   filterTwo() {
-    let filter = "?status=inativo"
+    let filter = "status=inativo&"
     this.setState({ statusFilter: filter })
   }
 
   applyFilter() {
+    let dateInFilter = ""
+    let dateChangeFilter = ""
     let state = this.state;
-    let url2 = state.url + state.statusFilter;
+    if (state.dateInFilter !== "todas as datas de inclusão") {
+      dateInFilter = "date_in=" + state.dateInFilter + "&"
+      console.log(dateInFilter)
+    }
+    if (state.dateChangeFilter !== "todas as datas de alteração") {
+      dateChangeFilter = "change_date=" + state.dateChangeFilter + "&"
+    }
+    let url2 = state.url + "?" + state.statusFilter + dateInFilter + dateChangeFilter;
+    console.log(url2)
     fetch(url2)
       .then((r) => r.json())
       .then((json) => {
         this.colorStatus(json)
         state.users = json;
         this.setState(state);
-
+        console.log(json);
+        
       })
-  }
-
-  dateIn(){
-
-  }
-
-  dateChange(){
+      this.state.dateInFilter= "todas as datas de inclusão"
+      this.state.dateChangeFilter= "todas as datas de alteração"
+      this.setState(state);
 
   }
 
@@ -137,19 +143,25 @@ class Body extends Component {
 
 
         <div>
-        
-            <div className="b btn-lg btn-secondary btn-block" >
-              <div className="button4" >
-                <img className="svg" alt="description of IMAGEM" src={require('../../assets/img/calendar.svg')} />
-              </div>
-              <a id="pinkText" >{this.state.dateInFilter.toLocaleUpperCase()}</a>
+          <div className="button4" >
+            <img className="svg" alt="description of IMAGEM" src={require('../../assets/img/calendar.svg')} />
+          </div>
+          <form >
 
-            </div>
-            
-          
+            <input onClick={() => { this.setState({ dateInFilter: "" }) }}
+              onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
+              type="text" id="pinkText" value={this.state.dateInFilter.toLocaleUpperCase()}
+              className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" />
+
+            <input onClick={() => { this.setState({ dateChangeFilter: "" }) }}
+              onChange={(e) => { this.setState({ dateChangeFilter: e.target.value }) }}
+              type="text" id="pinkText" value={this.state.dateChangeFilter.toLocaleUpperCase()}
+              className="btn btn-lg btn-secondary dropdown-toggle btn-lg btn-block" />
+          </form>
+
         </div>
 
-        
+
 
         <div>
           <div className="dropdown">
@@ -174,7 +186,8 @@ class Body extends Component {
         </div>
 
 
-
+        <h2>{this.state.statusFilter}</h2>
+        <h2>{this.state.dateInFilter}</h2>
 
 
 

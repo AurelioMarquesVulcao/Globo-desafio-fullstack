@@ -67,6 +67,7 @@ class Footer extends Component {
       fetch(url)
         .then((res) => res.json())
         .then((json) => {
+          // console.log(json);
           const now = new Date()
 
           var seconds = now.getSeconds()
@@ -82,15 +83,17 @@ class Footer extends Component {
             Hour = "0" + Hour
           }
           var hourNow = Hour + ":" + minutes + ":" + seconds
-          
+          // console.log(hourNow)
           // Filtering for current schedule
-          var tvNow = []
+          let tvNow = []
           let i = 0
+
           for (i in json) {
             if (json[i]["hour_end"].split(":") > hourNow.split(":")) {
               // tvNow = json[i]["name"]
-              // console.log(tvNow);
+              // console.log(json[i]["name"])
               if (json[i]["hour_start"].split(":") < hourNow.split(":")) {
+                console.log(json[i]["name"])
                 tvNow = json[i]["name"]
                 state.show = tvNow + " " + json[i]["hour_start"]
                 state.showUpdate = Hour + ":" + minutes
