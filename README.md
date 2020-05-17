@@ -71,4 +71,6 @@ After filling, you must click on apply to perform the filter on the user list.
 
 ## React Pattern
 
+Tests on components
+
 ![users](./src/assets/img/tests01.PNG)

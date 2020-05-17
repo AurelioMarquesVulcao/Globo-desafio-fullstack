@@ -37,10 +37,7 @@ class Header extends Component {
             <form className="form-inline">
               <input type="text" className="form-control" placeholder="Pesquisar..." aria-label="Username" aria-describedby="basic-addon1" />
               <a className="buttonSearch" href="/">
-                <svg className="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" />
-                  <path d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" />
-                </svg>
+                <img src={require('../../assets/img/svg1.svg')} alt="undefine" id="iconsvg" />        
               </a>
             </form>
 
@@ -49,10 +46,7 @@ class Header extends Component {
 
 
           <div className="exit" id="right">
-            <svg className="bi bi-power" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.578 4.437a5 5 0 104.922.044l.5-.866a6 6 0 11-5.908-.053l.486.875z" />
-              <path d="M7.5 8V1h1v7h-1z" />
-            </svg>
+            <img src={require('../../assets/img/svg2.svg')} alt="undefine" id="iconsvg" /> 
           </div>
 
           <div className="options" id="right">
@@ -62,10 +56,7 @@ class Header extends Component {
           </div>
 
           <div className="home" id="right">
-            <svg className="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" />
-              <path d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z" />
-            </svg>
+            <img src={require('../../assets/img/svg3.svg')} alt="undefine" id="iconsvg" />
           </div>
 
           <div className="inputUser" id="right">

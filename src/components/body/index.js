@@ -88,13 +88,14 @@ class Body extends Component {
   render() {
     return (
       <div>
+        {/* ----------- start of list------------- */}
         <table className="table table-striped">
           <thead className="bg-white">
             <tr>
               <th scope="col" id="whiteText">..........</th>
               <th scope="col" className="textcenter">USUÁRIO</th>
               <th scope="col" className="textcenter">EMAIL</th>
-              <th scope="col"className="textcenter">DATA DE INCLUSÃO</th>
+              <th scope="col" className="textcenter">DATA DE INCLUSÃO</th>
               <th scope="col" className="textcenter">DATA DE ALTERAÇÃO</th>
               <th scope="col" className="textcenter">REGRAS</th>
               <th scope="col" className="textcenter">STATUS</th>
@@ -102,6 +103,7 @@ class Body extends Component {
               <th scope="col" className="textcenter">AÇÕES</th>
             </tr>
           </thead>
+          {/* --------- start user list for API---------- */}
           <tbody>
             {this.state.users.map((item) => {
               return (
@@ -121,6 +123,7 @@ class Body extends Component {
               );
             })}
           </tbody>
+          {/* --------- end user list for API---------- */}
         </table>
         {/* navigation */}
         <nav aria-label="..." className="navButton">
@@ -138,10 +141,10 @@ class Body extends Component {
             </li>
           </ul>
         </nav>
-        {/* <!---- End of list---- > */}
-   
+        {/* ----------- End of list------------- */}
 
-        {/* <!-- Modal --> */}
+
+        {/* ----------- Modal-------------- */}
         <div id="rightBody">
           <div className="modal fade" id="filterUser" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 
@@ -164,30 +167,27 @@ class Body extends Component {
                     da tabela, clique no botão APLICAR para salvar as alterações
                   </div>
 
+                  {/* start first filter */}
 
-                  
-                 
-              
                   <form className="filterDate textFilter">
-                    <input onClick={() => { this.setState({ dateInFilter: "" }) }}
+                    <input data-testid="form-field"
+                    onClick={() => { this.setState({ dateInFilter: "" }) }}
                       onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
                       type="text" value={this.state.dateInFilter.toLocaleUpperCase()}
                       className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkText textFilter" />
                   </form><hr></hr>
-                  
-                  
+                  {/* end first filter */}
 
-
-
+                  {/* start second filter */}
                   <form className="filterDate textFilter">
                     <input onClick={() => { this.setState({ dateChangeFilter: "" }) }}
                       onChange={(e) => { this.setState({ dateChangeFilter: e.target.value }) }}
                       type="text" value={this.state.dateChangeFilter.toLocaleUpperCase()}
                       className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkTex textFilter" />
                   </form><hr></hr>
-
-
-
+                  {/* end second filter */}
+                  
+                  {/* start third filter */}
                   <div>
                     <div className="dropdown">
                       <button className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -197,32 +197,25 @@ class Body extends Component {
                         <b id="teste01" className="textFilter" >ATIVOS E INATIVOS</b>
 
                       </button><hr></hr>
-                      {/* onChange={this.insertStatusFilter} */}
                       <div className="dropdown-menu bg-lgray " aria-labelledby="dropdownMenuButton" >
                         <div className="dropdown-item textFilter" onClick={this.filterOne}>Ativos</div>
                         <div className="dropdown-item textFilter" onClick={this.filterTwo}>Inativos</div>
-
                       </div>
                     </div>
                   </div>
+                  {/* end third filter */}
 
+                  {/* start submit filter */}
                   <div>
-                    <div type="button" className="btn bg-lgray btn-block box-shadow" onClick={this.applyFilter}>APLICAR</div>
+                    <div data-testid="form-btn" 
+                    type="button" className="btn bg-lgray btn-block box-shadow" onClick={this.applyFilter}>APLICAR</div>
                   </div>
-
+                  {/* end submit filter */}
                 </div>
-
-
               </div>
-
             </div>
           </div>
         </div>
-
-
-
-
-
       </div >
     );
   }
