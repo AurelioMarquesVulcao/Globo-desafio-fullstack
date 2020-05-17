@@ -9,7 +9,6 @@ describe('Testing Body Component', () => {
         const wrapper = shallow(
             <Body />
         );
-        expect(toJson(wrapper)).toMatchSnapshot();
-
+        expect(toJson(wrapper)).toMatchSnapshot();   
     });
 });
