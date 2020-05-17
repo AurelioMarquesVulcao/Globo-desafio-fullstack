@@ -1,3 +1,295 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Body Component should render correctly 1`] = `ShallowWrapper {}`;
+exports[`Testing Body Component should render correctly 1`] = `
+<div>
+  <table
+    className="table table-striped"
+  >
+    <thead
+      className="bg-white"
+    >
+      <tr>
+        <th
+          id="whiteText"
+          scope="col"
+        >
+          ..........
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          USUÁRIO
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          EMAIL
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          DATA DE INCLUSÃO
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          DATA DE ALTERAÇÃO
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          REGRAS
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          STATUS
+        </th>
+        <th
+          id="whiteText"
+          scope="col"
+        >
+          ............................
+        </th>
+        <th
+          className="textcenter"
+          scope="col"
+        >
+          AÇÕES
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <nav
+    aria-label="..."
+    className="navButton"
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item disabled"
+      >
+        <a
+          className="page-link text-muted"
+          href="/"
+        >
+          Primeiro
+        </a>
+      </li>
+      <li
+        className="page-item "
+      >
+        <a
+          className="page-link text-muted"
+          href="/"
+        >
+          Anterior
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          className="page-link text-white"
+          href="/"
+          id="target1"
+        >
+          1 
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          className="page-link text-muted"
+          href="/"
+        >
+          Próximo
+        </a>
+      </li>
+      <li
+        className="page-item"
+      >
+        <a
+          className="page-link text-muted"
+          href="/"
+        >
+          Ultimo
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div
+    id="rightBody"
+  >
+    <div
+      aria-hidden="true"
+      aria-labelledby="exampleModalCenterTitle"
+      className="modal fade"
+      id="filterUser"
+      role="dialog"
+      tabIndex="-1"
+    >
+      <div
+        className="modal-dialog"
+        id="rightBody"
+        role="document"
+      >
+        <div
+          className="modal-content"
+        >
+          <div
+            className="modal-header"
+          >
+            <h5
+              className="modal-title"
+              id="exampleModalLongTitle"
+            >
+              <div
+                className=" button2 "
+                id="left"
+              >
+                <img
+                  alt="undefine"
+                  id="iconsvg"
+                  src={
+                    Object {
+                      "ReactComponent": Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "render": [Function],
+                      },
+                      "__esModule": true,
+                      "default": "icon-set2.svg",
+                    }
+                  }
+                />
+              </div>
+              Filtros
+            </h5>
+            <button
+              aria-label="Close"
+              className="close"
+              data-dismiss="modal"
+              type="button"
+            >
+              <span
+                aria-hidden="true"
+              >
+                ×
+              </span>
+            </button>
+          </div>
+          <div
+            className="modal-body"
+          >
+            <div>
+              Utilize os filtros abaixo para refinar os resultados da tabela, clique no botão APLICAR para salvar as alterações
+            </div>
+            <form
+              className="filterDate textFilter"
+            >
+              <input
+                className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkText textFilter"
+                data-testid="form-field"
+                onChange={[Function]}
+                onClick={[Function]}
+                type="text"
+                value="TODAS AS DATAS DE INCLUSÃO"
+              />
+            </form>
+            <hr />
+            <form
+              className="filterDate textFilter"
+            >
+              <input
+                className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkTex textFilter"
+                onChange={[Function]}
+                onClick={[Function]}
+                type="text"
+                value="TODAS AS DATAS DE ALTERAÇÃO"
+              />
+            </form>
+            <hr />
+            <div>
+              <div
+                className="dropdown"
+              >
+                <button
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block"
+                  data-toggle="dropdown"
+                  id="dropdownMenuButton"
+                  type="button"
+                >
+                  <div
+                    className="button4"
+                    href="/"
+                  >
+                    <img
+                      alt="description of IMAGEM"
+                      className="svg"
+                      src={
+                        Object {
+                          "ReactComponent": Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "render": [Function],
+                          },
+                          "__esModule": true,
+                          "default": "onOff.svg",
+                        }
+                      }
+                    />
+                  </div>
+                  <b
+                    className="textFilter"
+                    id="teste01"
+                  >
+                    ATIVOS E INATIVOS
+                  </b>
+                </button>
+                <hr />
+                <div
+                  aria-labelledby="dropdownMenuButton"
+                  className="dropdown-menu bg-lgray "
+                >
+                  <div
+                    className="dropdown-item textFilter"
+                    onClick={[Function]}
+                  >
+                    Ativos
+                  </div>
+                  <div
+                    className="dropdown-item textFilter"
+                    onClick={[Function]}
+                  >
+                    Inativos
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                className="btn bg-lgray btn-block box-shadow"
+                data-testid="form-btn"
+                onClick={[Function]}
+                type="button"
+              >
+                APLICAR
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

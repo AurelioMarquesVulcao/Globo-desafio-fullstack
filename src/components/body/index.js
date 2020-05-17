@@ -111,14 +111,14 @@ class Body extends Component {
                   <th scope="row" className="form-check">
                     <input className="form-check-input " type="checkbox" id="blankCheckbox" value="option1" aria-label="..."></input>
                   </th>
-                  <td className="userName textCollum">{item.user.toUpperCase()}</td>
+                  <td className="userName textCollum" >{item.user.toUpperCase()}</td>
                   <td className="textCollum">{item.email}</td>
                   <td className="textCollum">{item.date_in}</td>
                   <td className="textCollum">{item.change_date}</td>
                   <td className="textCollum">{item.rules}</td>
                   <td className="textCollum" id={item.status[1]}>{item.status[0].toUpperCase()}</td>
                   <td></td>
-                  <td><a href="/"> <img src={require('../../assets/img/3dots.svg')} alt="undefine" id="iconsvg" /> </a></td>
+                  <td><a href="/"> <img height= "11px" src={require('../../assets/img/3dots.svg')} alt="undefine"  /> </a></td>
                 </tr>
               );
             })}
@@ -171,7 +171,7 @@ class Body extends Component {
 
                   <form className="filterDate textFilter">
                     <input data-testid="form-field"
-                    onClick={() => { this.setState({ dateInFilter: "" }) }}
+                      onClick={() => { this.setState({ dateInFilter: "" }) }}
                       onChange={(e) => { this.setState({ dateInFilter: e.target.value }) }}
                       type="text" value={this.state.dateInFilter.toLocaleUpperCase()}
                       className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkText textFilter" />
@@ -186,7 +186,7 @@ class Body extends Component {
                       className="btn btn-lg bg-lgray dropdown-toggle btn-lg btn-block pinkTex textFilter" />
                   </form><hr></hr>
                   {/* end second filter */}
-                  
+
                   {/* start third filter */}
                   <div>
                     <div className="dropdown">
@@ -207,8 +207,8 @@ class Body extends Component {
 
                   {/* start submit filter */}
                   <div>
-                    <div data-testid="form-btn" 
-                    type="button" className="btn bg-lgray btn-block box-shadow" onClick={this.applyFilter}>APLICAR</div>
+                    <div data-testid="form-btn"
+                      type="button" className="btn bg-lgray btn-block box-shadow" onClick={this.applyFilter}>APLICAR</div>
                   </div>
                   {/* end submit filter */}
                 </div>

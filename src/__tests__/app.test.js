@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Body from '../components/body';
+import App from '../App';
 import toJson from 'enzyme-to-json';
 
 
-describe('Testing Body Component', () => {
+describe('Testing App Component', () => {
     it('should render correctly', () => {
         const wrapper = shallow(
-            <Body />
+            <App />
         );
         expect(toJson(wrapper)).toMatchSnapshot();
 

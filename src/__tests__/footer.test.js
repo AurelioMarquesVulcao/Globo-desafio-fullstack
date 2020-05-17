@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Body from '../components/body';
+import Footer from '../components/footer';
 import toJson from 'enzyme-to-json';
 
 
-describe('Testing Body Component', () => {
+describe('Testing Footer Component', () => {
     it('should render correctly', () => {
         const wrapper = shallow(
-            <Body />
+            <Footer />
         );
         expect(toJson(wrapper)).toMatchSnapshot();
 
